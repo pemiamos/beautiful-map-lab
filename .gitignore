@@ -1,0 +1,44 @@
+# === 私密文件（化名 ↔ 真名映射）===
+# 这是仓库唯一的私密文件，绝对不能提交
+name-mapping.md
+*.private.md
+**/private/
+
+# === Obsidian ===
+# Obsidian 的工作区配置可以保留（共享插件配置），但工作区状态不入库
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache
+.obsidian/plugins/*/data.json
+
+# === macOS 系统文件 ===
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# === 临时与备份 ===
+*.tmp
+*.bak
+*.swp
+*~
+*.orig
+
+# === AI 草稿 ===
+# 三个 AI 的临时输出（合并前），不入正式档案
+*.draft.md
+**/drafts/
+
+# === 录音与原始音频 ===
+# 例会原始录音不入库（体积大且为内部材料）
+*.mp3
+*.m4a
+*.wav
+*.flac
+recordings/
+
+# === IDE ===
+.vscode/
+.idea/
