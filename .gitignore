@@ -42,3 +42,4 @@ recordings/
 # === IDE ===
 .vscode/
 .idea/
+.obsidian/
