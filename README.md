@@ -34,23 +34,26 @@
 beautiful-map-lab/
 ├── README.md                    本文件
 ├── prompts/                     AI 整理的 prompt（系统灵魂）
-│   ├── cleanup.md               整理稿规则
+│   ├── cleanup-short.md         日常整理规则（800 字以内）
+│   ├── cleanup.md               完整整理稿规则
 │   └── merge.md                 三 AI 合并规则
 ├── templates/                   Templater 模板
 │   ├── meeting-raw.md
-│   ├── meeting-notes.md
-│   └── student-week.md
+│   └── meeting-notes.md
 ├── meetings/                    每周例会档案（扁平命名）
 │   ├── 2026-W18-raw.md
 │   └── 2026-W18-notes.md
-├── students/                    每位同学的周档案
-│   └── <slug>-2026-W18.md
 ├── decisions/                   重大设计决策记录
+│   └── 2026-W18-workflow-established.md
 ├── methods/                     可复用的设计方法
+│   ├── 001-rock-textures.md     已人工审核的正式方法
 │   └── method-candidates/       AI 提议的候选（未审核）
 └── assets/                      截图与图片
     └── 2026-W18/
+        └── cover.png
 ```
+
+本地可存在 `name-mapping.md` 作为化名与真名对照表；该文件已被 `.gitignore` 排除，不进入公开仓库。
 
 ---
 
@@ -102,13 +105,14 @@ beautiful-map-lab/
 3. 例会录音 + 微信群发言 → raw.md
    （化名替换在这一步完成）
        ↓
-4. 三个 AI（Claude / GPT / Gemini）平行调用 cleanup.md
+4. 三个 AI（Claude / GPT / Gemini）平行调用 cleanup-short.md
+   （内容复杂时改用 cleanup.md 完整规则）
        ↓
 5. Claude 用 merge.md 合并三份输出 → notes.md
        ↓
 6. 默寺审阅 notes.md（检查语气保留、AI 段落是否越界）
        ↓
-7. notes.md 中各学生段落 → 各自的 students/<slug>-2026-Wxx.md
+7. notes.md 中每位学生段落补齐 Notion 周报、跨周追踪、下周关注
        ↓
 8. method-candidates 段落 → methods/method-candidates/
        ↓
@@ -121,7 +125,7 @@ beautiful-map-lab/
 
 ## 标签词典
 
-**所有学生周档案和会议笔记的标签必须从此处取。**
+**所有会议笔记和方法条目的标签必须从此处取。**
 
 新增标签需先入词典，再在档案中使用。
 
@@ -148,6 +152,8 @@ beautiful-map-lab/
 
 ### 协作与方向
 - `跨学生协作` — 任务在团队内复用、相互借力
+- `团队级资产` — 可被整组复用的方法、素材或工程能力
+- `护城河` — 人的研究、手工、判断与 AI 拉开差距的能力
 - `方向调整` — 项目方向变化
 - `保留方案` — 重要的"为什么保留"决策
 - `否定方案` — 重要的"为什么否定"决策

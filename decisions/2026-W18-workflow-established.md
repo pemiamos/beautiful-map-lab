@@ -35,7 +35,6 @@ beautiful-map-lab/
 ├── prompts/      AI 整理 prompt
 ├── templates/    Obsidian Templater 模板
 ├── meetings/     每周会议（扁平命名 2026-Wxx-raw / 2026-Wxx-notes）
-├── students/     每位同学每周档案（slug-2026-Wxx.md）
 ├── decisions/    重大决策记录
 ├── methods/      可复用方法
 └── assets/       图片与截图（按周分子目录）
@@ -50,13 +49,16 @@ beautiful-map-lab/
   ↓
 raw.md（化名替换在此完成）
   ↓
-三 AI（Claude / GPT / Gemini）平行用 cleanup.md 整理
+三 AI（Claude / GPT / Gemini）平行用 cleanup-short.md 整理
+（内容复杂时改用 cleanup.md）
   ↓
 Claude 用 merge.md 合并
   ↓
 notes.md（默寺审阅）
   ↓
-分发到 students/<slug>-Wxx.md + methods/method-candidates/
+notes.md 内补齐每位学生的 Notion 周报、跨周追踪、下周关注
+  ↓
+methods/method-candidates/ 候选沉淀
   ↓
 push GitHub
 ```
@@ -97,7 +99,7 @@ push GitHub
 - Obsidian 本地编辑零学习成本（默寺已熟练）
 - Obsidian Git 插件自动 commit/push，不用碰命令行
 - vault = repo 根目录，无中间转换
-- 双向链接对应"会议笔记 ↔ 学生档案"交叉引用
+- 每周 notes.md 作为唯一入口，一次看完会议判断、学生追踪和下周关注
 
 ### 为什么坚持"AI 不产生判断"
 

@@ -9,7 +9,7 @@ status: pending_review
 
 # <% tp.file.title %> · 整理稿
 
-> 本文件是 AI 用 cleanup.md 规则整理、Claude 用 merge.md 合并后的成稿。
+> 本文件是 AI 用 cleanup-short.md / cleanup.md 规则整理、Claude 用 merge.md 合并后的成稿。
 > 默寺审阅后将 status 改为 `reviewed`。
 
 ---
